@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+nav {
+  background: #222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 60px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+#home {
+  text-align: center;
+  background: #333;
+  color: white;
+}
