@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nagesh | Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Kuppala Nagesh | Java Backend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- ===== NAVBAR ===== -->
 <nav>
-  <h2>Nagesh</h2>
+  <div class="logo">Nagesh</div>
   <ul>
-    <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -18,45 +19,73 @@
   </ul>
 </nav>
 
-<!-- Home -->
-<section id="home">
-  <h1>Hi, I'm Nagesh</h1>
-  <p>Java Backend Developer</p>
-  <button>View Projects</button>
-</section>
-
-<!-- About -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am a Java Backend Developer with experience in Spring Boot and REST APIs.</p>
-</section>
-
-<!-- Skills -->
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Java</li>
-    <li>Spring Boot</li>
-    <li>REST APIs</li>
-    <li>MySQL</li>
-    <li>Git</li>
-  </ul>
-</section>
-
-<!-- Projects -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Employee Management System</h3>
-    <p>Java, Spring Boot, MySQL</p>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>Hi, I'm Kuppala Nagesh</h1>
+  <p>Java Backend Developer | Spring Boot | REST APIs</p>
+  <div class="buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#" class="btn-outline">Download Resume</a>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact">
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a Java Backend Developer with strong experience in building
+    scalable REST APIs using Spring Boot and MySQL.
+    I enjoy solving real-world problems and writing clean, maintainable code.
+  </p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card">Java</div>
+    <div class="card">Spring Boot</div>
+    <div class="card">REST APIs</div>
+    <div class="card">MySQL</div>
+    <div class="card">JWT</div>
+    <div class="card">Git & GitHub</div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Employee Management System</h3>
+    <p>CRUD application with authentication and role-based access.</p>
+    <span>Java | Spring Boot | MySQL</span>
+  </div>
+
+  <div class="project-card">
+    <h3>E-Commerce Backend API</h3>
+    <p>REST API for users, products, orders and payments with JWT security.</p>
+    <span>Spring Boot | JWT | MySQL</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Task Management System</h3>
+    <p>Secure backend system to create, update and track tasks.</p>
+    <span>Java | REST API | MySQL</span>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
   <h2>Contact</h2>
   <p>Email: yourmail@gmail.com</p>
+  <p>GitHub: github.com/yourusername</p>
+  <p>LinkedIn: linkedin.com/in/yourusername</p>
 </section>
+
+<footer>
+  <p>© 2026 Kuppala Nagesh | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
