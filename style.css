@@ -2,36 +2,51 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Poppins,sans-serif;
 }
 
 body{
 background:#0b1120;
 color:white;
-scroll-behavior:smooth;
+transition:0.4s;
 }
 
-/* NAVBAR */
+/* LIGHT MODE */
+body.light{
+background:#f5f5f5;
+color:#111;
+}
+
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
-background:rgba(0,0,0,0.6);
+padding:20px 50px;
+background:black;
 position:fixed;
 width:100%;
 top:0;
-z-index:1000;
+}
+
+body.light header{
+background:white;
 }
 
 nav a{
 color:white;
-margin-left:25px;
+margin-left:20px;
 text-decoration:none;
 }
 
-nav a:hover{
-color:#38bdf8;
+body.light nav a{
+color:black;
+}
+
+#themeBtn{
+background:none;
+border:none;
+font-size:20px;
+cursor:pointer;
 }
 
 /* HERO */
@@ -42,20 +57,36 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:radial-gradient(circle at top,#1e3a8a,#020617);
+background:linear-gradient(120deg,#1e3a8a,#020617);
+}
+
+body.light .hero{
+background:#dbeafe;
 }
 
 .hero span{
 color:#38bdf8;
 }
 
+.hero-btns{
+margin-top:20px;
+}
+
 .btn{
-margin-top:25px;
-padding:12px 35px;
+padding:12px 30px;
 background:#38bdf8;
 color:black;
+border-radius:25px;
 text-decoration:none;
-border-radius:30px;
+margin-right:10px;
+}
+
+.btn-outline{
+padding:10px 28px;
+border:2px solid #38bdf8;
+border-radius:25px;
+color:#38bdf8;
+text-decoration:none;
 }
 
 /* SECTIONS */
@@ -64,46 +95,68 @@ padding:120px 20%;
 text-align:center;
 }
 
-h2{
-margin-bottom:20px;
-}
-
-/* SKILLS */
 .skills-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
 gap:20px;
 }
 
-.skills-grid div{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-}
-
-/* PROJECTS */
+.skills-grid div,
 .project-card{
 background:#1e293b;
-padding:25px;
+padding:20px;
 border-radius:12px;
-margin:20px auto;
-width:70%;
 }
 
-/* FOOTER */
+body.light .skills-grid div,
+body.light .project-card{
+background:white;
+}
+
+/* PROJECT IMAGE */
+.project-card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* CONTACT FORM */
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+form input,form textarea{
+margin:10px 0;
+padding:10px;
+border-radius:5px;
+border:none;
+}
+
+form button{
+background:#38bdf8;
+padding:12px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
 footer{
 text-align:center;
 padding:20px;
 background:black;
 }
 
+body.light footer{
+background:white;
+}
+
 /* MOBILE */
 @media(max-width:768px){
 section{
 padding:120px 10%;
-}
-.project-card{
-width:100%;
 }
 header{
 flex-direction:column;
