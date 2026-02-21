@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="Kuppala Nagesh - Java Backend Developer Portfolio">
+<meta name="keywords" content="Java Developer, Spring Boot, Backend Developer, Portfolio">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Kuppala Nagesh | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ===== NAVBAR ===== -->
 <header>
   <div class="logo">Nagesh.dev</div>
+
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -23,59 +25,73 @@
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <button id="themeBtn">🌙</button>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ===== HERO ===== -->
 <section id="home" class="hero">
   <h1>Hello, I'm <span>Nagesh</span></h1>
   <h2><span id="typing"></span></h2>
-  <p>Building fast, secure and scalable backend applications.</p>
-  <a href="#projects" class="btn">View My Work</a>
+  <p>Building secure & scalable backend applications</p>
+
+  <div class="hero-btns">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" download class="btn-outline">Download Resume</a>
+  </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- ===== ABOUT ===== -->
 <section id="about">
-  <h2>About Me</h2>
-  <p>
-I am a Java Backend Developer skilled in Spring Boot, REST APIs and MySQL.
-I love designing secure backend systems and solving real-world problems.
-  </p>
+<h2>About Me</h2>
+<p>
+Java Backend Developer with strong knowledge in Spring Boot,
+REST APIs and MySQL. Passionate about clean code and system design.
+</p>
 </section>
 
-<!-- ================= SKILLS ================= -->
+<!-- ===== SKILLS ===== -->
 <section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div>Java</div>
-    <div>Spring Boot</div>
-    <div>REST APIs</div>
-    <div>MySQL</div>
-    <div>JWT Security</div>
-    <div>GitHub</div>
-  </div>
+<h2>Skills</h2>
+<div class="skills-grid">
+<div>Java</div>
+<div>Spring Boot</div>
+<div>REST APIs</div>
+<div>MySQL</div>
+<div>JWT</div>
+<div>GitHub</div>
+</div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- ===== PROJECTS ===== -->
 <section id="projects">
-  <h2>Projects</h2>
+<h2>Projects</h2>
 
-  <div class="project-card">
-    <h3>Employee Management System</h3>
-    <p>CRUD backend with authentication and role based access.</p>
-  </div>
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="">
+<h3>Employee Management System</h3>
+<p>CRUD backend with authentication.</p>
+</div>
 
-  <div class="project-card">
-    <h3>E-Commerce Backend API</h3>
-    <p>Secure REST APIs for users, products and orders.</p>
-  </div>
+<div class="project-card">
+<img src="https://via.placeholder.com/400x200" alt="">
+<h3>E-Commerce Backend API</h3>
+<p>Secure REST API using Spring Boot.</p>
+</div>
 
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- ===== CONTACT ===== -->
 <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
-  <p>GitHub: github.com/yourusername</p>
+<h2>Contact</h2>
+
+<form action="https://formspree.io/f/xbldkzqv" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
 </section>
 
 <footer>
@@ -83,6 +99,5 @@ I love designing secure backend systems and solving real-world problems.
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
