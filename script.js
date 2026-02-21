@@ -1,3 +1,4 @@
+// Typing Effect
 const roles=["Java Backend Developer","Spring Boot Specialist","API Engineer"];
 let i=0,j=0;
 const typing=document.getElementById("typing");
@@ -22,5 +23,10 @@ function erase(){
   setTimeout(type,300);
  }
 }
-
 type();
+
+// DARK/LIGHT MODE
+const themeBtn=document.getElementById("themeBtn");
+themeBtn.onclick=()=>{
+ document.body.classList.toggle("light");
+};
