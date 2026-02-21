@@ -1,15 +1,23 @@
-body {
-  font-family: Arial;
+* {
   margin: 0;
-  background: #f4f4f4;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* NAVBAR */
 nav {
-  background: #222;
+  background: #111;
   color: white;
-  padding: 15px;
+  padding: 15px 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -26,15 +34,112 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
-  padding: 60px;
-  background: white;
-  margin: 20px;
-  border-radius: 8px;
+nav ul li a:hover {
+  color: #00bcd4;
 }
 
-#home {
-  text-align: center;
-  background: #333;
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #111, #333);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #00bcd4;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-outline {
+  border: 2px solid #00bcd4;
+  padding: 8px 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0097a7;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* PROJECTS */
+.project-card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card span {
+  display: block;
+  margin-top: 10px;
+  color: #00bcd4;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
 }
