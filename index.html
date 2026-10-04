@@ -418,6 +418,21 @@
       color: var(--accent-light);
     }
 
+    .project-links button {
+      background: none;
+      border: none;
+      color: white;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .project-links button:hover {
+      color: var(--accent-light);
+    }
+
     /* EXPERIENCE */
 
     .timeline {
@@ -913,16 +928,12 @@
               </div>
 
               <div class="project-links">
-
-                <!-- Replace with your GitHub URL -->
-                <a href="#" target="_blank">
+                <a href="https://github.com/nageshk-roy" target="_blank" rel="noopener noreferrer">
                   GitHub ↗
                 </a>
-
-                <a href="#">
-                  Case Study →
-                </a>
-
+                <button type="button" onclick="showNotDeployed('Performance AI Agent')">
+                  Demo →
+                </button>
               </div>
 
             </div>
@@ -961,15 +972,12 @@
               </div>
 
               <div class="project-links">
-
-                <a href="#" target="_blank">
+                <a href="https://github.com/nageshk-roy" target="_blank" rel="noopener noreferrer">
                   GitHub ↗
                 </a>
-
-                <a href="#">
-                  View Project →
-                </a>
-
+                <button type="button" onclick="showNotDeployed('UnderstandAnything')">
+                  Demo →
+                </button>
               </div>
 
             </div>
@@ -1008,15 +1016,12 @@
               </div>
 
               <div class="project-links">
-
-                <a href="#" target="_blank">
+                <a href="https://github.com/nageshk-roy" target="_blank" rel="noopener noreferrer">
                   GitHub ↗
                 </a>
-
-                <a href="#">
-                  Live Demo →
-                </a>
-
+                <button type="button" onclick="showNotDeployed('StoryHub')">
+                  Demo →
+                </button>
               </div>
 
             </div>
@@ -1288,7 +1293,7 @@
           </a>
 
           <a
-            href="https://github.com/"
+            href="https://github.com/nageshk-roy"
             target="_blank"
             class="btn btn-secondary"
           >
@@ -1348,6 +1353,13 @@
       .querySelectorAll(".fade")
       .forEach((element) => observer.observe(element));
 
+    function showNotDeployed(projectName) {
+      alert(
+        projectName +
+        " is currently under development and is not deployed yet. " +
+        "The GitHub button opens my GitHub profile."
+      );
+    }
   </script>
 
 </body>
